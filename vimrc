@@ -37,14 +37,6 @@ nmap <Leader>Q :qa!<CR>
 " 设置快捷键遍历子窗口
 " 依次遍历
 nnoremap nw <C-W><C-W>
-" 跳转至右方的窗口
-nnoremap <Leader>lw <C-W>l
-" 跳转至方的窗口
-nnoremap <Leader>hw <C-W>h
-" 跳转至上方的子窗口
-nnoremap <Leader>kw <C-W>k
-" 跳转至下方的子窗口
-nnoremap <Leader>jw <C-W>j
 
 " 定义快捷键在结对符之间跳转
 nmap <Leader>M %
@@ -484,8 +476,8 @@ nmap <Leader>man :Man 3 <cword><CR>
 " 工程文件浏览
 " 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
 autocmd VimEnter * NERDTree
-" 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
-nmap <Leader>fl :NERDTreeToggle<CR>
+" 使用 NERDTree 插件查看工程文件。设置快捷键F2
+nmap <F2> :NERDTreeToggle<CR>
 " 设置 NERDTree 子窗口宽度
 let NERDTreeWinSize=22
 " 设置 NERDTree 子窗口位置
@@ -506,8 +498,8 @@ let NERDTreeAutoDeleteBuffer=1
 map <Leader>bl :MBEToggle<cr>
 
 " buffer 切换快捷键
-map <Leader>2 :MBEbn<cr>
-map <Leader>1 :MBEbp<cr>
+map <Leader>h :MBEbn<cr>
+map <Leader>l :MBEbp<cr>
 
 " <<
 
