@@ -66,8 +66,35 @@ set ignorecase
 " 关闭兼容模式
 set nocompatible
 
+" 不产生~备份文件
+set nobackup			
+
 " vim 自身命令行模式智能补全
 set wildmenu
+
+" 在使用退格键处理一些问题
+set backspace=indent,eol,start 
+
+" 如果搜索模式包含大写字符，不使用 'ignorecase'
+set smartcase 			
+
+" insert mode 下使用Ctrl+hjkl移动光标
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+
+" " 编码
+"----------------------------------------------
+set encoding=utf8			" 内部编码
+set termencoding=utf-8		" 告诉Term编码格式
+
+set fileencoding=utf-8		" 新建文件编码；下面预测编码
+set fileencodings=utf-8,gb2312,gbk,gb18030
+
+set fileformat=unix 		" 新建文件格式；预测格式
+set fileformats=unix,dos
+"----------------------------------------------
 
 " <<
 
