@@ -93,8 +93,13 @@ alias l='ls -CF'
 # modify by RyanHuen aliases
 alias vi='vim'
 alias cl='clear'
-alias cdf='cd /home/ryanhuenwork/framework'
+alias cdma='cd /home/ryanhuenwork/framework/marshmallow_arm'
+alias cdmx='cd /home/ryanhuenwork/framework/marshmallow_x86'
+alias cdpa='cd /home/ryanhuenwork/framework/PhoenixOs'
+alias cdpx='cd /home/ryanhuenwork/framework/phoenixos_x86'
 alias cdp='cd /home/ryanhuenwork/project'
+alias ..='cd ..'
+alias ...='cd ../..'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -119,3 +124,16 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+#环境变量配置
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
+export ADB_HOME=/home/ryanhuenwork/framework/marshmallow_arm/out/host/linux-x86/bin
+export GRADLE_HOME=/opt/gradle-2.10
+export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
+export ANDROID_HOME=/opt/Android/Sdk
+export DEPOT_Home=/opt/depot_tools
+export REPO_HOME=/home/ryanhuenwork/bin
+
+
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$PATH

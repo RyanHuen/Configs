@@ -476,8 +476,8 @@ nmap <Leader>man :Man 3 <cword><CR>
 " 工程文件浏览
 " 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
 autocmd VimEnter * NERDTree
-" 使用 NERDTree 插件查看工程文件。设置快捷键F2
-nmap <F2> :NERDTreeToggle<CR>
+" 使用 NERDTree 插件查看工程文件。设置快捷键F3
+nmap <F3> :NERDTreeToggle<CR>
 " 设置 NERDTree 子窗口宽度
 let NERDTreeWinSize=22
 " 设置 NERDTree 子窗口位置
@@ -488,7 +488,6 @@ let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
-
 " <<
 
 " >>
@@ -498,8 +497,8 @@ let NERDTreeAutoDeleteBuffer=1
 map <Leader>bl :MBEToggle<cr>
 
 " buffer 切换快捷键
-map <Leader>h :MBEbn<cr>
-map <Leader>l :MBEbp<cr>
+map <Leader>l :MBEbn<cr>
+map <Leader>h :MBEbp<cr>
 
 " <<
 
