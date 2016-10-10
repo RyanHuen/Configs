@@ -1,0 +1,11 @@
+[user]
+	name = xuanweihong
+#   name = your home pc git.name
+	email = xuanweihong@phoenixos.com
+#    email = your home pc git.email
+[color]
+	ui = auto
+[core]
+	editor = vim
+	excludesfile = /home/leesheen/.gitignore
+[alias]
