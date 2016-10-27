@@ -37,6 +37,14 @@ nmap <Leader>Q :qa!<CR>
 " 设置快捷键遍历子窗口
 " 依次遍历
 nnoremap nw <C-W><C-W>
+" 跳转至右方的窗口
+nnoremap <Leader>lw <C-W>l
+" 跳转至方的窗口
+nnoremap <Leader>hw <C-W>h
+" 跳转至上方的子窗口
+nnoremap <Leader>kw <C-W>k
+" 跳转至下方的子窗口
+nnoremap <Leader>jw <C-W>j
 
 " 定义快捷键在结对符之间跳转
 nmap <Leader>M %
@@ -58,11 +66,11 @@ set ignorecase
 " 关闭兼容模式
 set nocompatible
 
-" 不产生~备份文件
-set nobackup			
-
 " vim 自身命令行模式智能补全
 set wildmenu
+
+" 不产生~备份文件
+set nobackup			
 
 " 在使用退格键处理一些问题
 set backspace=indent,eol,start 
@@ -87,6 +95,7 @@ set fileencodings=utf-8,gb2312,gbk,gb18030
 set fileformat=unix 		" 新建文件格式；预测格式
 set fileformats=unix,dos
 "----------------------------------------------
+
 
 " <<
 
@@ -135,8 +144,8 @@ filetype plugin indent on
 
 " 配色方案
 set background=dark
-colorscheme solarized
-"colorscheme molokai
+"colorscheme solarized
+colorscheme molokai
 "colorscheme phd
 
 " >>
@@ -474,6 +483,7 @@ nmap <Leader>man :Man 3 <cword><CR>
 
 " >>
 " 工程文件浏览
+
 " 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
 autocmd VimEnter * NERDTree
 " 使用 NERDTree 插件查看工程文件。设置快捷键F3
@@ -488,6 +498,7 @@ let NERDTreeShowHidden=1
 let NERDTreeMinimalUI=1
 " 删除文件时自动删除文件对应 buffer
 let NERDTreeAutoDeleteBuffer=1
+
 " <<
 
 " >>
@@ -497,8 +508,8 @@ let NERDTreeAutoDeleteBuffer=1
 map <Leader>bl :MBEToggle<cr>
 
 " buffer 切换快捷键
-map <Leader>l :MBEbn<cr>
-map <Leader>h :MBEbp<cr>
+map <C-Tab> :MBEbn<cr>
+map <C-S-Tab> :MBEbp<cr>
 
 " <<
 
