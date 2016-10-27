@@ -508,8 +508,8 @@ let NERDTreeAutoDeleteBuffer=1
 map <Leader>bl :MBEToggle<cr>
 
 " buffer 切换快捷键
-map <C-Tab> :MBEbn<cr>
-map <C-S-Tab> :MBEbp<cr>
+map <Leader>f :MBEbn<cr>
+map <Leader>a :MBEbp<cr>
 
 " <<
 
