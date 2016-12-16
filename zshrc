@@ -103,15 +103,22 @@ alias vi='vim'
 alias cl='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias cdp='cd /home/ryanhuenwork/project'
-alias cdpe='cd /home/ryanhuenwork/project/explorer'
-alias cdma='cd /home/ryanhuenwork/framework/marshmallow_arm'
-alias cdmx='cd /home/ryanhuenwork/framework/marshmallow_x86'
-alias cdmp='cd /home/ryanhuenwork/framework/marshmallow_aosp'
-alias cdpa='cd /home/ryanhuenwork/framework/PhoenixOs'
-alias cdpx='cd /home/ryanhuenwork/framework/phoenixos_x86'
-alias cdpc='cd /home/ryanhuenwork/project/CZnetworkSupportLib'
-alias cdfe='cd /home/ryanhuenwork/ForOnlyTestProject/explorer'
+alias cdp='cd /home/ryanhuencompany/Project'
+alias cdpe='cd /home/ryanhuencompany/Project/explorer'
+alias cdma='cd /home/ryanhuencompany/Framework/marshmallow_arm'
+alias cdmx='cd /home/ryanhuencompany/Framework/marshmallow_x86'
+alias cdmp='cd /home/ryanhuencompany/Framework/marshmallow_aosp'
+alias cdpa='cd /home/ryanhuencompany/Framework/phoenixos_arm'
+alias cdpx='cd /home/ryanhuencompany/Framework/phoenixos_x86'
+alias cdpc='cd /home/ryanhuencompany/Project/CZnetworkSupportLib'
+alias cdf='cd /home/ryanhuencompany/Framework'
+alias cdmop='cd /home/ryanhuencompany/MyOwnProject'
+alias kad='adb kill-server' 
+alias oad='adb start-server'
+alias rad='adb root && adb remount'
+alias scoff='gnome-screensaver-command -a'
+alias du.='du -h | tail -n 1'
+
 alias -s html=chromium-browser   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
 alias -s rb=gedit     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
 alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
@@ -122,6 +129,7 @@ alias -s cpp=vi
 alias -s java=vi
 alias -s txt=vi
 alias -s md=vi
+alias -s mk=vi
 alias -s xz='tar -xf'
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
@@ -130,22 +138,22 @@ alias -s bz2='tar -xjvf'
 
 alias emacs='emacs -nw'
 
-#git alias
-alias gits='git status'
-alias gitc='git checkout'
-
 #环境变量配置
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export ADB_HOME=/opt/Android/Sdk/platform-tools
-#export ADB_HOME=/home/ryanhuenwork/framework/marshmallow_arm/out/host/linux-x86/bin
-export GRADLE_HOME=/opt/gradle-2.10
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
+#export ADB_HOME=/opt/Android/Sdk/platform-tools
+export ADB_HOME=/home/ryanhuencompany/Android/Sdk/platform-tools
+export GRADLE_HOME=/home/ryanhuencompany/Softwares/gradle-2.10
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 export ANDROID_HOME=/opt/Android/Sdk
 export REPO_HOME=/home/ryanhuenwork/bin
 export DEX_HOME=/opt/dex2jar
+#export NDK_HOME=/home/ryanhuencompany/Android/Sdk/ndk-bundle
+export VIMRUNTIME=/usr/share/vim/vim80
+export DEPOT_TOOLS_HOME=/opt/depot_tools
 
 
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$PATH
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$VIMRUNTIME/:$DEPOT_TOOLS_HOME/:$PATH
 
 
 
