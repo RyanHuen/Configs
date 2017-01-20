@@ -6,6 +6,12 @@
 [color]
 	ui = auto
 [core]
-	editor = vim
-	excludesfile = /home/leesheen/.gitignore
+	editor = emacs -nw 
 [alias]
+    st= status
+    co= checkout
+    br= branch
+    cm= commit
+    rs= reset
+    throw= reset --hard
+    pl= pull
