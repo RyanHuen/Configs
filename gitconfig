@@ -8,10 +8,12 @@
 [core]
 	editor = emacs -nw 
 [alias]
+    aa= add .
     st= status
     co= checkout
     br= branch
     cm= commit
+    sub = commit -m
     rs= reset
     throw= reset --hard
     pl= pull
