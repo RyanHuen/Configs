@@ -16,5 +16,5 @@
     sub = commit -m
     rs= reset
     throw= reset --hard
-    pl= pull
+    pl= pull --rebase
 
