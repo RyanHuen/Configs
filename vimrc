@@ -1,8 +1,7 @@
 " 更新时间：2016-03-30 12:15:21
 
 " 定义快捷键的前缀，即 <Leader>
-let mapleader=";"
-
+let mapleader=" "
 " >>
 " 文件类型侦测
 
@@ -126,8 +125,6 @@ Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/DrawIt'
-Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'derekwyatt/vim-protodef'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
@@ -145,8 +142,8 @@ filetype plugin indent on
 " 配色方案
 set background=dark
 "colorscheme solarized
-colorscheme molokai
-"colorscheme phd
+"colorscheme molokai
+colorscheme phd
 
 " >>
 " 营造专注气氛

@@ -1,7 +1,7 @@
 [user]
-	name = xuanweihong
+	name = RyanHuen
 #   name = your home pc git.name
-	email = xuanweihong@phoenixos.com
+	email = rsonelife@icloud.com
 #    email = your home pc git.email
 [color]
 	ui = auto
@@ -15,3 +15,4 @@
     rs= reset
     throw= reset --hard
     pl= pull
+

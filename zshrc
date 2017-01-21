@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #some aliases
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
@@ -93,32 +93,26 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+#alias ll='ls -alF'
+#alias la='ls -A'
+#alias l='ls -CF'
 
 # modify by RyanHuen aliases
 #打开软件的alias
 alias em='emacs -nw'
 alias vi='emacs -nw'
-alias chrome='chromium-browser'
+alias chrome='open -a /Applications/Google\ Chrome.app '
 
 #命令alias
 alias cl='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias cdp='cd /home/ryanhuencompany/Project'
-alias cdpe='cd /home/ryanhuencompany/Project/explorer'
-alias cdma='cd /home/ryanhuencompany/Framework/marshmallow_arm'
-alias cdmx='cd /home/ryanhuencompany/Framework/marshmallow_x86'
-alias cdmp='cd /home/ryanhuencompany/Framework/marshmallow_aosp'
-alias cdpn='cd /home/ryanhuencompany/Framework/phoenix_n'
-alias cdpa='cd /home/ryanhuencompany/Framework/phoenixos_arm'
-alias cdpx='cd /home/ryanhuencompany/Framework/phoenixos_x86'
-alias cdpc='cd /home/ryanhuencompany/Project/CZnetworkSupportLib'
-alias cdf='cd /home/ryanhuencompany/Framework'
-alias cdmo='cd /home/ryanhuencompany/MyOwnProject'
-alias cdno='cd /home/ryanhuencompany/MyOwnProject/GitHubs/RyanHuenNote'
+alias cdp='cd /Volumes/Mac_Home/Project'
+alias cdmp='cd //Volumes/Mac_Home/Framework/aosp'
+alias cdf='cd /Volumes/Mac_Home/Framework'
+alias cdno='cd /Users/xuanweihong/GitHubs/RyanHuenNote'
+alias cdme='cd /Volumes/Mac_Extent'
+alias cdmh='cd /Volumes/Mac_Home'
 alias kad='adb kill-server' 
 alias oad='adb start-server'
 alias rad='adb root && adb remount'
@@ -127,7 +121,7 @@ alias du.='du -h | tail -n 1'
 alias g='git'
 
 alias -s html=chrome   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
-alias -s rb=gedit     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
+alias -s rb=vi # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
 alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
 alias -s js=vi
 alias -s c=vi
@@ -136,30 +130,13 @@ alias -s cpp=vi
 alias -s java=vi
 alias -s txt=vi
 alias -s md=chrome
+alias -s org=em
 alias -s mk=vi
 alias -s xz='tar -xf'
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
-
-
-#环境变量配置
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-#export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
-#export ADB_HOME=/opt/Android/Sdk/platform-tools
-export ADB_HOME=/home/ryanhuencompany/Android/Sdk/platform-tools
-export GRADLE_HOME=/home/ryanhuencompany/Softwares/gradle-2.10
-export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
-export ANDROID_HOME=/opt/Android/Sdk
-export REPO_HOME=/home/ryanhuenwork/bin
-export DEX_HOME=/opt/dex2jar
-#export NDK_HOME=/home/ryanhuencompany/Android/Sdk/ndk-bundle
-export VIMRUNTIME=/usr/share/vim/vim80
-#export DEPOT_TOOLS_HOME=/opt/depot_tools
-
-
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$VIMRUNTIME/:$PATH
 
 
 
