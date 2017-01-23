@@ -1,0 +1,55 @@
+* 随机读取流：
+** 简述：
+- 既能读，也能写
+- 能直接操作多种类型数据
+- 可以操作文件的任意位置。
+** 使用
+- 使用random流
+  #+BEGIN_SRC java
+  RandomAccessFile ran=new RandomAccessFile("路径","mode");
+  #+END_SRC
+  | mode: | r | rw |
+** rw功能：
+- 重载了各种数据类型的write。
+  #+BEGIN_SRC java
+    ran.write();
+  #+END_SRC
+- 关闭流
+  #+BEGIN_SRC java
+    ran.close();
+  #+END_SRC
+- 跳到指定的5位置开始写，覆盖原有内容
+  #+BEGIN_SRC java
+    ran.seek(5);
+  #+END_SRC
+- 跳过10个字节进行操作
+  #+BEGIN_SRC java
+    ran.skipBytes(10);
+  #+END_SRC
+** r功能：
+- 一次读取一行。中文会乱码
+  #+BEGIN_SRC java
+    ran.readLine();
+  #+END_SRC
+- 关闭流
+  #+BEGIN_SRC java
+    ran.close();
+  #+END_SRC
+- RandomAccessFile一般不用于处理文本文档：
+  - 以下方法写入到文本文档中的64会被记事本显示为“    A”，因为int占4个字节。
+    #+BEGIN_SRC java
+      raf.writeInt(64);
+    #+END_SRC
+  - 以下方法写入到文本文档中的boolean值会无法显示，因为记事本无法识别boolean字符。
+    #+BEGIN_SRC java
+      raf.writeBoolean(true);
+    #+END_SRC
+** 解决中文乱码：
+- RandomAccessFile读取进来的字符是默认按照ISO8859-1进行编码的
+- 主流的编码：
+  | UTF       | UTF-8   UTF-16      | 世界编码           |
+  | GBK       | GB2312 GBK GBK18030 | 中国国标           |
+  | ISO8859-1 | ISO8859-1           | 西欧编码  不含中文 |
+- 处理中文字符乱码：
+  [[./../images/io_random_4.png]]
+  
