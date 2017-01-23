@@ -51,5 +51,5 @@
   | GBK       | GB2312 GBK GBK18030 | 中国国标           |
   | ISO8859-1 | ISO8859-1           | 西欧编码  不含中文 |
 - 处理中文字符乱码：
-  [[./../images/io_random_4.png]]
+  [[./images/io_random_4.png]]
   
