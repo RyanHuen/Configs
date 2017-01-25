@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -18,7 +18,7 @@ ZSH_THEME="ys"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -49,9 +49,12 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump)
 
 # User configuration
+[[ -s /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh ]] && source /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit
+
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -118,13 +121,14 @@ alias cdpx='cd /home/ryanhuencompany/Framework/phoenixos_x86'
 alias cdpc='cd /home/ryanhuencompany/Project/CZnetworkSupportLib'
 alias cdf='cd /home/ryanhuencompany/Framework'
 alias cdmo='cd /home/ryanhuencompany/MyOwnProject'
-alias cdno='cd /home/ryanhuencompany/MyOwnProject/GitHubs/RyanHuenNote'
+alias cdno='cd /home/ryanhuencompany/MyOwnProject/GitHubs/RyanNote'
 alias kad='adb kill-server' 
 alias oad='adb start-server'
 alias rad='adb root && adb remount'
 alias scoff='gnome-screensaver-command -a'
 alias du.='du -h | tail -n 1'
 alias g='git'
+alias catg='cat /home/ryanhuencompany/MyOwnProject/GitHubs/RyanNote/LinuxNote/oh-my-zsh/git-plugin.org'
 
 alias -s html=chrome   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
 alias -s rb=gedit     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
