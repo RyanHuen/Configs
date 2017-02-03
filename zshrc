@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -18,7 +18,7 @@ ZSH_THEME="ys"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -49,9 +49,13 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump)
 
 # User configuration
+
+[[ -s /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh ]] && source /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit
+
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -110,7 +114,7 @@ alias ...='cd ../..'
 alias cdp='cd /Volumes/Mac_Home/Project'
 alias cdmp='cd //Volumes/Mac_Home/Framework/aosp'
 alias cdf='cd /Volumes/Mac_Home/Framework'
-alias cdno='cd /Users/xuanweihong/GitHubs/RyanHuenNote'
+alias cdno='cd /Users/xuanweihong/GitHubs/RyanNote'
 alias cdme='cd /Volumes/Mac_Extent'
 alias cdmh='cd /Volumes/Mac_Home'
 alias kad='adb kill-server' 
