@@ -53,7 +53,6 @@ plugins=(git autojump)
 
 # User configuration
 [[ -s /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh ]] && source /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit
 
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
