@@ -7,6 +7,7 @@
 	ui = auto
 [core]
 	editor = emacs -nw 
+	quotepath = false
 [alias]
     aa= add .
     st= status
