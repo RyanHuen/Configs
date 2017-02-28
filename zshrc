@@ -5,6 +5,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+#ZSH_THEME="amuse"
+#ZSH_THEME="random"
+#ZSH_THEME="ys"
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -116,7 +119,7 @@ alias cdmx='cd /home/ryanhuencompany/Framework/marshmallow_x86'
 alias cdmp='cd /home/ryanhuencompany/Framework/marshmallow_aosp'
 alias cdpn='cd /home/ryanhuencompany/Framework/phoenix_n'
 alias cdpa='cd /home/ryanhuencompany/Framework/phoenixos_arm'
-alias cdpx='cd /home/ryanhuencompany/Framework/phoenixos_x86'
+alias cdpx='cd /home/ryanhuencompany/Framework/phoenix_n_x86'
 alias cdpc='cd /home/ryanhuencompany/Project/CZnetworkSupportLib'
 alias cdf='cd /home/ryanhuencompany/Framework'
 alias cdmo='cd /home/ryanhuencompany/MyOwnProject'
@@ -140,6 +143,7 @@ alias -s java=vi
 alias -s txt=vi
 alias -s md=chrome
 alias -s mk=vi
+alias -s org=vi
 alias -s xz='tar -xf'
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
@@ -148,7 +152,7 @@ alias -s bz2='tar -xjvf'
 
 
 #环境变量配置
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 #export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 #export ADB_HOME=/opt/Android/Sdk/platform-tools
 export ADB_HOME=/home/ryanhuencompany/Android/Sdk/platform-tools
@@ -163,6 +167,3 @@ export VIMRUNTIME=/usr/share/vim/vim80
 
 
 export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$VIMRUNTIME/:$PATH
-
-
-
