@@ -55,7 +55,7 @@ export UPDATE_ZSH_DAYS=13
 plugins=(git autojump)
 
 # User configuration
-[[ -s /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh ]] && source /home/ryanhuencompany/.autojump/etc/profile.d/autojump.sh
+[[ -s /home/ryanhuen/.autojump/etc/profile.d/autojump.sh ]] && source /home/ryanhuen/.autojump/etc/profile.d/autojump.sh
 
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -112,25 +112,25 @@ alias chrome='chromium-browser'
 alias cl='clear'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias cdp='cd /home/ryanhuencompany/Project'
-alias cdpe='cd /home/ryanhuencompany/Project/explorer'
-alias cdma='cd /home/ryanhuencompany/Framework/marshmallow_arm'
-alias cdmx='cd /home/ryanhuencompany/Framework/marshmallow_x86'
-alias cdmp='cd /home/ryanhuencompany/Framework/marshmallow_aosp'
-alias cdpn='cd /home/ryanhuencompany/Framework/phoenix_n'
-alias cdpa='cd /home/ryanhuencompany/Framework/phoenixos_arm'
-alias cdpx='cd /home/ryanhuencompany/Framework/phoenix_n_x86'
-alias cdpc='cd /home/ryanhuencompany/Project/CZnetworkSupportLib'
-alias cdf='cd /home/ryanhuencompany/Framework'
-alias cdmo='cd /home/ryanhuencompany/MyOwnProject'
-alias cdno='cd /home/ryanhuencompany/MyOwnProject/GitHubs/RyanNote'
+alias cdp='cd /home/ryanhuen/Project'
+alias cdpe='cd /home/ryanhuen/Project/explorer'
+alias cdma='cd /home/ryanhuen/Framework/marshmallow_arm'
+alias cdmx='cd /home/ryanhuen/Framework/marshmallow_x86'
+alias cdmp='cd /home/ryanhuen/Framework/marshmallow_aosp'
+alias cdpn='cd /home/ryanhuen/Framework/phoenix_n'
+alias cdpa='cd /home/ryanhuen/Framework/phoenixos_arm'
+alias cdpx='cd /home/ryanhuen/Framework/phoenix_n_x86'
+alias cdpc='cd /home/ryanhuen/Project/CZnetworkSupportLib'
+alias cdf='cd /home/ryanhuen/Framework'
+alias cdmo='cd /home/ryanhuen/MyOwnProject'
+alias cdex='/home/ryanhuen/Data/External'
 alias kad='adb kill-server' 
 alias oad='adb start-server'
 alias rad='adb root && adb remount'
 alias scoff='gnome-screensaver-command -a'
 alias du.='du -h | tail -n 1'
 alias g='git'
-alias catg='cat /home/ryanhuencompany/MyOwnProject/GitHubs/RyanNote/LinuxNote/oh-my-zsh/git-plugin.org'
+alias catg='cat /home/ryanhuen/MyOwnProject/GitHubs/RyanNote/LinuxNote/oh-my-zsh/git-plugin.org'
 
 alias -s html=chrome   # 在命令行直接输入后缀为 html 的文件名，会在 TextMate 中打开
 alias -s rb=gedit     # 在命令行直接输入 ruby 文件，会在 TextMate 中打开
@@ -155,15 +155,16 @@ alias -s bz2='tar -xjvf'
 #export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 #export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-amd64
 #export ADB_HOME=/opt/Android/Sdk/platform-tools
-export ADB_HOME=/home/ryanhuencompany/Android/Sdk/platform-tools
-export GRADLE_HOME=/home/ryanhuencompany/Softwares/gradle-2.10
+export ADB_HOME=/home/ryanhuen/Android/Sdk/platform-tools
+export GRADLE_HOME=/home/ryanhuen/Softwares/gradle-2.10
 export CLASSPATH=.:$JAVA_HOME/lib:$JAVA_HOME/jre/lib:$CLASSPATH
 export ANDROID_HOME=/opt/Android/Sdk
-export REPO_HOME=/home/ryanhuenwork/bin
+export REPO_HOME=/home/ryanhuen/bin
 export DEX_HOME=/opt/dex2jar
-#export NDK_HOME=/home/ryanhuencompany/Android/Sdk/ndk-bundle
+#export NDK_HOME=/home/ryanhuen/Android/Sdk/ndk-bundle
 export VIMRUNTIME=/usr/share/vim/vim80
 #export DEPOT_TOOLS_HOME=/opt/depot_tools
+export OUT_DIR_COMMON_BASE=/home/ryanhuen/Data/External/output
 
 
-export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$VIMRUNTIME/:$PATH
+export PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$ADB_HOME:$GRADLE_HOME/bin:$ANDROID_HOME/:$REPO_HOME/:$DEX_HOME/:$OUT_DIR_COMMON_BASE/:$PATH
